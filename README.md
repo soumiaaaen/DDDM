@@ -44,14 +44,12 @@ DDDM_Projet/
 ├── 📓 NOTEBOOKS
 │   └── DDDM_Projet_Complet.ipynb          ← Notebook unifié (toutes phases)
 │
-├── 📊 DASHBOARD
-│   ├── dashboard.py                        ← Application Dash (localhost:8050)
-│   └── DDDM_Dashboard.html                 ← Version HTML standalone (sans serveur)
+├── dashboard.py                        ← Application Dash (localhost:8050) 
 │
-├── 📁 DONNÉES
-│   ├── Ecommerce_Sales_Data_2024_2025.csv  ← Source 1 : EC Sales (Inde)
-│   ├── product_sales_dataset_final.csv     ← Source 2 : Product Sales (USA)
-│   └── merged_ecommerce_dataset.csv        ← Dataset fusionné (205,000 lignes) ← GÉNÉRÉ
+├──  Ecommerce_Sales_Data_2024_2025.csv  ← Source 1 : EC Sales (Inde)
+├── product_sales_dataset_final.csv     ← Source 2 : Product Sales (USA)
+├── merged_ecommerce_dataset.csv        ← Dataset fusionné (205,000 lignes) ← GÉNÉRÉ
+│
 │
 ├── 📁 PRÉDICTIONS (générées par Phase 4)
 │   ├── predictions_ec.csv                  ← Prévisions XGBoost — EC Sales
@@ -67,11 +65,10 @@ DDDM_Projet/
 │   ├── phase6_ab_test_simulation.png
 │   └── phase6_impact_financier.png
 │
-├── 📄 DOCUMENTATION
-│   ├── README.md                           ← Ce fichier
-│   └── requirements.txt                    ← Dépendances Python
 │
-└── 🔖 .git/                               ← Versioning Git
+├── README.md                           ← Ce fichier
+└── requirements.txt                    ← Dépendances Python
+
 ```
 
 ---
@@ -121,29 +118,17 @@ DDDM_Projet/
 ### Étape 1 — Cloner le dépôt
 
 ```bash
-git clone https://github.com/<votre-username>/dddm-ecommerce.git
-cd dddm-ecommerce
+git clone https://github.com/soumiaaaen/DDDM.git
+cd DDDM
 ```
 
-### Étape 2 — Créer un environnement virtuel (recommandé)
-
-```bash
-python -m venv venv
-
-# Windows
-venv\Scripts\activate
-
-# macOS / Linux
-source venv/bin/activate
-```
-
-### Étape 3 — Installer les dépendances
+### Étape 2 — Installer les dépendances
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Étape 4 — Vérifier les fichiers de données
+### Étape 3 — Vérifier les fichiers de données
 
 Assurez-vous que ces fichiers sont présents dans le dossier du projet :
 
@@ -177,12 +162,6 @@ Le dashboard démarre en quelques secondes et charge automatiquement les donnée
 | Vue 5 — Stocks | Opérations | Couverture stock, alertes réapprovisionnement, simulateur |
 
 > **Note :** Le dashboard nécessite les fichiers `predictions_ec.csv` et `predictions_ps.csv` générés par la Phase 4 du notebook. Sans ces fichiers, les prévisions sont estimées automatiquement depuis les données historiques.
-
-### Option B — Dashboard HTML Standalone
-
-Ouvrir directement le fichier `DDDM_Dashboard.html` dans un navigateur web (Chrome, Firefox, Edge).
-
-**Aucune installation requise.** Toutes les données sont intégrées dans le fichier HTML.
 
 ---
 
