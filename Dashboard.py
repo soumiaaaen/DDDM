@@ -78,8 +78,8 @@ print("📂 Chargement des données...")
 df = pd.read_csv('merged_ecommerce_dataset.csv', parse_dates=['order_date'])
 
 try:
-    pred_ec = pd.read_csv('predictions_ec.csv', parse_dates=[DATE_COL])
-    pred_ps = pd.read_csv('predictions_ps.csv', parse_dates=[DATE_COL])
+    pred_ec = pd.read_csv('PRÉDICTIONS/predictions_ec.csv', parse_dates=[DATE_COL])
+    pred_ps = pd.read_csv('PRÉDICTIONS/predictions_ps.csv', parse_dates=[DATE_COL])
     print("✅ Fichiers prédictions chargés")
 except Exception as e:
     print(f"⚠️  Prédictions non trouvées : {e}")
@@ -1209,7 +1209,7 @@ def update_vue3_static(tab):
             number=dict(suffix=unit, valueformat=fmt,
                         font=dict(size=28, color=col))), row=1, col=ci)
     fig_kpi.update_layout(**LAYOUT_BASE, height=160,
-        title=dict(text='🎯 KPIs Marketing — Top Catégories & Marges', font=dict(size=14)))
+        title=dict(text='🎯 KPIs Marketing — Top Catégories & Marges', font=dict(size=16)))
 
     # Pie
     fig_pie = make_subplots(rows=1, cols=2,
