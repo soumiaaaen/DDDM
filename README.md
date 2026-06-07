@@ -269,36 +269,24 @@ Installer l'extension **Jupyter** depuis le marketplace VS Code, puis ouvrir dir
 ## requirements.txt
 
 ```
-pandas==2.1.0
-numpy==1.24.0
-matplotlib==3.7.0
-seaborn==0.12.0
-scikit-learn==1.3.0
-xgboost==2.0.0
-statsmodels==0.14.0
-prophet==1.1.4
-shap==0.43.0
-plotly==5.17.0
-dash==2.14.0
-scipy==1.11.0
-openpyxl==3.1.0
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+xgboost
+statsmodels
+prophet
+shap
+plotly
+dash
+scipy
+openpyxl
+ipywidgets
+jupyterlab
 ```
 
 ---
 
-## Versioning Git
-
-```bash
-# Initialiser le dépôt
-git init
-git add .
-git commit -m "feat: projet DDDM complet — 6 phases + dashboard"
-
-# Tag version finale
-git tag -a v1.0.0 -m "Version finale — soumission Juin 2026"
-git push origin main --tags
-```
-
----
 
 *Projet réalisé dans le cadre du module Data-Driven Decision Making — Juin 2026*
