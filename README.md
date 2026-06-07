@@ -86,7 +86,6 @@ DDDM_Projet/
 | Fichier | Description | Utilisation |
 |---------|-------------|-------------|
 | `dashboard.py` | Application Dash interactive avec 5 vues, filtres dynamiques, drill-down par catégorie et région, simulateur de stock | `python dashboard.py` → http://localhost:8050 |
-| `DDDM_Dashboard.html` | Version standalone HTML — s'ouvre directement dans le navigateur sans installation | Double-clic sur le fichier |
 
 ### Données
 
