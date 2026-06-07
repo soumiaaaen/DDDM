@@ -161,7 +161,6 @@ Le dashboard démarre en quelques secondes et charge automatiquement les donnée
 | Vue 4 — Géographie | Marketing | Carte US, top états, drill-down région |
 | Vue 5 — Stocks | Opérations | Couverture stock, alertes réapprovisionnement, simulateur |
 
-> **Note :** Le dashboard nécessite les fichiers `predictions_ec.csv` et `predictions_ps.csv` générés par la Phase 4 du notebook. Sans ces fichiers, les prévisions sont estimées automatiquement depuis les données historiques.
 
 ---
 
